@@ -1,6 +1,7 @@
 body {
  
     font-family: 'Titillium Web', sans-serif !important;
+    background: #000;
   }
 
 
@@ -8,9 +9,12 @@ footer{
 	background-color:black;
 	position: fixed;
     bottom: 0;
+    height: 60px;
     width: 100%;
+    padding-top: 20px;
 
-	ul{
+	ul{ 
+		@include cero;
 
 		li{
 			display: inline-block;
@@ -31,44 +35,18 @@ footer{
 
 }
 
-.contenido{
-	z-index: -1;
-    position: relative;
-}
 
-.lateral {
-	top:142px !important;
-}
-
-.mapa{
-	padding-left:280px;
-}
-
-.second-nav {
-	background-color:black;
-
-	i.material-icons{
-		display: inline-block;
-		width: 30px;
-		font-size: 19px;
-		vertical-align: bottom;
-	}
-
-	span{
-		padding: 0px 10px 0px 8px;
-    	border-radius: 5px;
-		color:white;
-		background-color:$red;
-		margin-left: 10px;
-	}
-}
 
 .second-nav{
-
+	background-color:black;
+	height: 68px;
 	.nav-wrapper {
 		
+			width: 60%;
 		.row{
-
+            i{
+            	@include cero;
+            }
 			div:nth-child(1) a{
 				color:red;
 				text-transform:uppercase;
@@ -84,14 +62,28 @@ footer{
 				font-weight: 700;
 				font-size: 22px;
 				line-height: 12px;
+				margin:  23px 0 0;
 
 		  	}
 
 		  	.guardados{
 		  		text-align: right;
+		  		span:nth-child(1){
+		  			display: inline-block;
+		  			width: 30px;
+		  			vertical-align: middle;
+		  			color: $red;
+		  		}
 			  		a{
 						text-decoration: underline;
-			  		}
+			  		 }
+			  		span:nth-child(3){
+					padding: 0px 10px 0px 8px;
+			    	border-radius: 5px;
+					color:white;
+					background-color:$red;
+					margin-left: 10px;
+				}	
 	  		}
 	  	}
 	}		
@@ -115,9 +107,10 @@ footer{
    		text-align: center;
     	line-height: 64px;
 		}
-
 	}
-
+    .container{
+       width: 60%;
+     }		
 }
 
 .brand-logo {
@@ -128,7 +121,56 @@ footer{
 		padding-top:10px;
 	}
 }
+.contenido{
+	@include flexFlow ;
+	  min-height: 100vmax;
+	ul{
+		@include cero;
+	}
+	// nth-child1
+	ul:nth-child(1){
 
+		width: 20%;
+		background-color: $greyLight; 
+		position: relative;
+		h3{
+          color: white;
+          font-size: 15px;
+           margin: 36px;
 
+		}
+		li.input-field{
+			background: $red;
+			border-radius: 5px;
+			width: 80%;
+			margin-left:auto;
+			margin-right:auto ; 
+		}	
+		.modal{
+			width: 20%;
+		}
+		> a {
+			border-top: 1px solid #999;
+			bottom: 0;
+			color: white;
+			height: 75px;
+			padding: 18px;
+			position: absolute;
+			text-align: center;
+			width: 100%;
+			i{
+				color: $darhgrey;
+				font-size: 32px;
+				margin-left: 5px;
+				vertical-align: middle;
+			}
+		}
+	}
+	// nth-child2
+	ul:nth-child(2){
+		width: 80%;
+
+	}
+}
 
 
