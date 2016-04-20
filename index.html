@@ -115,30 +115,21 @@
 	
 <div class="section" id="section1"> 
    
-			<main class="contenido campana">
+			<main class="contenido-campana campana">
+			<div>
 			  <ul>
-				<h3><i class="material-icons">format_list_bulleted</i>MIS CAMPAÑAS CREADAS</h3>
-				 <li><i class="flaticon-folder"></i><a href="">Campaña Tecate GDL/MEX<a></li>
-				 <li><i class="flaticon-folder"></i><a href="">Campaña Gansito MTY<a></li>
-				 <li><i class="flaticon-folder"></i><a href="">Campaña Pepsi CDMX<a></li>
-				  <!-- Modal Trigger -->
-				  <a class="waves-effect waves-light btn modal-trigger" href="#modal2">Modal</a>
-
-				  <!-- Modal Structure -->
-				  <div id="modal2" class="modal2">
-				    <div class="modal-content">
-				      <h4>Modal Header</h4>
-				      <p>A bunch of text</p>
-				    </div>
-				    <div class="modal-footer">
-				      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-				    </div>
-				  </div>
-          
-          
+				<h3><i class="material-icons">format_list_bulleted</i>&nbsp Mis campañas creadas</h3>
+				 <li><a href="#"><i class="flaticon-folder"></i>Campaña Tecate GDL/MEX<a></li>
+				 <li><a href="#"><i class="flaticon-folder"></i>Campaña Gansito MTY<a></li>
+				 <li><a href="#"><i class="flaticon-folder"></i>Campaña Pepsi CDMX<a></li>
+				 
 		      </ul>
+		       <a class="modal-trigger" href="#modal2"><i class="material-icons">add_box</i>Crear campaña nueva</a>
+		     			
+			</div>
+
 		      
-		      <ul class="tabla">
+		      <div class="tabla">
 		      	<h2>Campaña Tecate GDL/MEX</h2>
 		      	<table class="striped">
 		        <thead>
@@ -215,7 +206,7 @@
 		      </table>
 
 		      <p><a href="#"><i class="flaticon-arrow"></i>&nbspDescargar en PDF</a></p>
-		      </ul>	
+		      </div>	
 
 	</main>
 	
@@ -293,6 +284,8 @@
 
 
 </div>
+
+
 <footer>
 		<div class="container">
 			<div class="row">
@@ -309,13 +302,74 @@
 				<li><a href="mailto:info@msmedia.com.mx">info@msmedia.com.mx</a></li>
 				<li>•</li>
 				<li>Tels: (55) 3067-4103 y (55) 4606-1234</li>
-				<a href="#" target="_blank"><i class="flaticon-social"></i></a>&nbsp
+				<a href="#" target="_blank"><i class="flaticon-social"></i></a>
+				&nbsp
 				<a href="#" target="_blank"><i class="flaticon-square"></i></a>
 			</ul>
 			</div>
 		</div>
 	</footer>
 
+	<div id="modal2" class="modal modal2 container">
+          <div class="modal-content row">
+          	<div class="modal-footer">
+          	 <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat "><i class="material-icons">close</i></a>
+          	</div>
+          	
+            <h3>Crear una campaña</h3>
+            <form action="#">
+			<div>
+            <label class="col s6">Nombre de campaña</label><input class="col s6" type="text" name="Nombre" ><br>
+			<label for="" class="col s6">Fecha de inicio</label><input class="col s6"  type="text" name="Inicio"><br>
+			<label for="" class="col s6">Fecha de finalización</label> <input type="text" class="col s6" name="Finalización"><br>
+			<a class="modal-trigger modal-close" href="#modal3"><i class="flaticon-arrows"></i>Ver campañas creadas</a>
+			</div>
+			<div class="submits">
+			<input type="submit" class="sub" value="Cancelar">
+			<input type="submit" class="sub2" value="Guardar">
+			</div>
+			</form>
+
+		</div>
+	</div>
+
+	<div id="modal3" class="modal modal2 modal3 container">
+          <div class="modal-content row">
+          	<div class="modal-footer">
+          	 <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat "><i class="material-icons">close</i></a>
+          	</div>
+          	
+            <h3>Selecciona una campaña</h3>
+            <h4><i class="material-icons">format_list_bulleted</i>&nbsp Mis campañas creadas</h4>
+            <form action="#">
+		    <p>
+		      <input type="checkbox" id="test5" />
+		      <label for="test5">Red</label>
+		    </p>
+		    <p>
+		      <input type="checkbox" id="test6" checked="checked" />
+		      <label for="test6">Yellow</label>
+		    </p>
+		    <p>
+		      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+		      <label for="filled-in-box">Filled in</label>
+		    </p>
+		    <p>
+		      <input type="checkbox" id="test7" checked="checked" disabled="disabled" />
+		      <label for="test7">Green</label>
+		    </p>
+		      <p>
+		        <input type="checkbox" id="test8" disabled="disabled" />
+		        <label for="test8">Brown</label>
+		    </p>
+			<div class="submits">
+			<input type="submit" class="sub" value="Cancelar">
+			<input type="submit" class="sub2" value="Guardar">
+			</div>
+			</form>
+
+		</div>
+	</div>
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="assets/js/materialize.js"></script>
@@ -333,6 +387,9 @@
 
 		});
 	</script>
+
+
+
 
 </body>
 </html>

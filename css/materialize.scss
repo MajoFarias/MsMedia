@@ -5266,7 +5266,7 @@ a.waves-effect .waves-ripple {
   right: 0;
   height: 125%;
   width: 100%;
-  background: transparent;
+  background: black;
   display: none;
   will-change: opacity;
 }
@@ -5604,8 +5604,7 @@ input[type=tel]:focus:not([readonly]),
 input[type=number]:focus:not([readonly]),
 input[type=search]:focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #26a69a;
-  box-shadow: 0 1px 0 0 #26a69a;
+  border-bottom: 2px solid $red;
 }
 
 input:not([type]):focus:not([readonly]) + label,
