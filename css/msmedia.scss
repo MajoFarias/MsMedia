@@ -1,7 +1,21 @@
 body {
  
     font-family: 'Titillium Web', sans-serif !important;
+    background: #000;
+    overflow-y: hidden;
   }
+
+
+.bottomInher{
+	bottom: 0;
+}
+.bottomTop{
+	bottom: 500px;
+}
+
+.lean-overlay{
+	display: none !important;
+}
 
 i{
 		font-style: normal;
@@ -17,11 +31,14 @@ i{
 }
 
 
+
 footer{
 	background-color:black;
 	position: fixed;
     bottom: 0;
+    height: 60px;
     width: 100%;
+    z-index: 1004;
     padding-top:20px;
 
 	a{
@@ -42,7 +59,9 @@ footer{
 		}
 	}
 
-	ul{
+
+	ul{ 
+		@include cero;
 
 		li{
 			display: inline-block;
@@ -65,33 +84,20 @@ footer{
 }
 
 
-.second-nav {
-	background-color:black;
 
-	i.material-icons{
-		display: inline-block;
-		width: 30px;
-		font-size: 19px;
-		vertical-align: bottom;
-	}
-
-	span{
-		padding: 0px 10px 0px 8px;
-    	border-radius: 5px;
-		color:white;
-		background-color:$red;
-		margin-left: 10px;
-	}
-}
 
 .second-nav{
+	background-color:black;
+	height: 68px;
 	z-index:99;
 	position:relative;
-
 	.nav-wrapper {
 		
+			width: 60%;
 		.row{
-
+            i{
+            	@include cero;
+            }
 			div:nth-child(1) a{
 				color:red;
 				text-transform:uppercase;
@@ -107,15 +113,28 @@ footer{
 				font-weight: 700;
 				font-size: 22px;
 				line-height: 12px;
+				margin:  23px 0 0;
 				text-align: left;
-
 		  	}
 
 		  	.guardados{
 		  		text-align: right;
+		  		span:nth-child(1){
+		  			display: inline-block;
+		  			width: 30px;
+		  			vertical-align: middle;
+		  			color: $red;
+		  		}
 			  		a{
 						text-decoration: underline;
-			  		}
+			  		 }
+			  		span:nth-child(3){
+					padding: 0px 10px 0px 8px;
+			    	border-radius: 5px;
+					color:white;
+					background-color:$red;
+					margin-left: 10px;
+				}	
 	  		}
 	  	}
 	}		
@@ -150,44 +169,95 @@ header{
     	line-height: 64px;
 		}
 	}
+    .container{
+       width: 60%;
+     }		
 }
 
 .brand-logo {
-
 	text-align:left !important;
-	
 	img{
 		padding-top:10px;
 	}
 }
 .contenido{
 	@include flexFlow ;
-	ul{
+	 height: 100%;
+
+	> ul{
 		@include cero;
+		margin: 178px 0 0 ;
+		position: relative;
 	}
 	// nth-child1
 	ul:nth-child(1){
 		width: 20%;
-		background-color: $grayLight;
-		padding: 24px 36px;
-		height: 900px;  
-		h3{
-          color: white;
-          font-size: 14px;
+		background-color: $greyLight; 
+        ul.collapsible{
+        	border:0;
+        	box-shadow: none;
+        	padding: 0 ;
+        	width: 100%;
+        	li:nth-child(2){
+        		.collapsible-header{
+        			border-top: 1px solid white;
+        		}
+        	}
+        	li:nth-child(1){
+        		.collapsible-body{
+                   height: 55vh;
+        		}
+        	}
+        	li{
+        		.collapsible-header{
+        			background: transparent ;
+        			color: white;
+        			padding: 18px 0;
+        			border:0;
+        			h4{
+        				font-size: 14px;
+        				margin-left: 18px;
+        			}
+        		}
+        		
+	        	.collapsible-body{
+	        		border: 0;
+	        		padding: 0 18px;
+	        		.select-wrapper{
+	        			background: $red;
+        				height: 40px;
+        				border-radius: 4px;
+        				margin-bottom: 16px;
+	        			input.select-dropdown{
+	        				font-weight: 100;
+	        			}
+        				span.caret{
+                             padding: 7px 10px 0;
+                             font-size: 32px;
+        				}
+	        		}
+	        	}
+	        }	
+        }
 
-		}
-		li.input-field{
-			background: $red;
-			border-radius: 5px;
-		}	
-		.modal{
-			width: 19.8%;
-		}
 	}
 	// nth-child2
 	ul:nth-child(2){
 		width: 80%;
 		background-color: white;
+		position: relative;
+		// iframe{
+		// 	overflow:hidden;
+		// 	overflow-x:hidden;
+		// 	overflow-y:hidden;
+		// 	height:100%;
+		// 	width:100%;
+		// 	position:absolute;
+		// 	top:0px;
+		// 	left:0px;
+		// 	right:0px;
+		// 	bottom:0px;
+		// }
 	}
 }
 
