@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -5,10 +6,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>MS Media</title>
-	<meta name="author" content="Alvaro Trigo Lopez" />
-	<meta name="description" content="fullPage plugin by Alvaro Trigo. Create fullscreen pages fast and simple. One page scroll like iPhone website." />
-	<meta name="keywords"  content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple" />
-	<meta name="Resource-type" content="Document" />
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,700,600italic,600,700italic,900,400italic' rel='stylesheet' type='text/css'>
@@ -23,95 +20,200 @@
 
 </head>
 <body>
-
 <header>
-<nav class="first-nav">
-<div class="nav-wrapper container">
-	 <a href="#" class="brand-logo">
-	        <img src="assets/images/logo.png" alt="ms media">
-	      </a>
-<ul id="" class="right hide-on-med-and-down">
-	<li data-menuanchor="firstPage"><a href="#firstPage"><i class="material-icons">location_on</i>
-	            Ubicaciones</a></li>
-	<li data-menuanchor="secondPage"><a href="#secondPage"><i class="material-icons">view_list</i>
-	            MÁS CAMPAÑAS</a></li>
-	<li data-menuanchor="3rdPage"><a href="#3rdPage"><i class="material-icons">send</i>
-	            CONTACTO</a></li>
-	
-</ul>
-</div>
-</nav>
-
-<nav class="second-nav">
+	<nav class="first-nav">
+		<div class="nav-wrapper container">
+		  <a href="#" class="brand-logo">
+			<img src="assets/images/logo.png" alt="ms media">
+		  </a>
+		  <ul id="" class="right hide-on-med-and-down">
+				<li data-menuanchor="firstPage"><a href="#firstPage"><i class="material-icons">location_on</i>
+				            Ubicaciones</a></li>
+				<li data-menuanchor="secondPage"><a href="#secondPage"><i class="material-icons">view_list</i>
+				            MÁS CAMPAÑAS</a></li>
+				<li data-menuanchor="3rdPage"><a href="#3rdPage"><i class="material-icons">send</i>
+				            CONTACTO</a></li>
+		   </ul>
+		</div>
+	</nav>
+    
+    <nav class="second-nav">
 	    <div class="nav-wrapper container">
 		    <div class="row">	
 			      <div class="col s9">
 			        <h2>Mapa de ubicaciones</h2>
 			      </div>
 			      <div class="col s3 guardados">
-			          <i class="material-icons">star_rate</i>
+			          <span class="material-icons">star_rate</span>
 			          <a href="#" class="collection-item">
 			           Guardados</a><span>1</span>
 			      </div>
 		    </div>
 		</div>
-	  </nav>  
+	</nav>  
 </header>
 
+<!-- ** FULLPAGE///-->
 <div id="fullpage">
-	
-<div class="section" id="section0">
-	
-	<main class="contenido">
-	  <ul>
-		<h3>UBICACIÓN Y NSE</h3>
-		 <li class="input-field col s12">
-		    <select>
-		      <option value="" disabled selected>Estado</option>
-		      <option value="1">Aguascalientes</option>
-		    </select>
-		  </li>
-		  <li class="input-field col s12">
-		    <select>
-		      <option value="" disabled selected>Ciudad</option>
-		      <option value="1">Aguascalientes</option>
-		    </select>
-		  </li>
-		  <li class="input-field col s12">
-		    <select>
-		      <option value="" disabled selected>Municipio</option>
-		      <option value="1">CDMX</option>
-		    </select>
-		  </li>
-		  <li class="input-field col s12">
-		    <select>
-		      <option value="" disabled selected>NSE</option>
-		      <option value="1">CDMX</option>
-		    </select>
-		  </li>
-		  <!-- Modal Trigger -->
-		  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">
-		     ESTABLECIMIENTOS CERCANOS
-		      <i class="material-icons">library_add</i>
 
-		   </a>
-		  <!-- Modal Structure -->
-		  <div id="modal1" class="modal bottom-sheet">
-		    <div class="modal-content">
-		      <h4>Modal Header</h4>
-		      <p>A bunch of text</p>
-		    </div>
-		    <div class="modal-footer">
-		      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-		    </div>
-		  </div>
-      </ul>
-      
-      <ul class="mapa">
-      	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15002084.337996349!2d-111.55596176394198!3d23.365841313308945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84043a3b88685353%3A0xed64b4be6b099811!2zTcOpeGljbw!5e0!3m2!1ses-419!2smx!4v1460656400638" width="100%" height="750px" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </ul>
-	</main>
-</div>
+	
+	  <div class="section" id="section0">
+		<main class="contenido">
+		  <ul>
+			
+			  <!-- BTN BUTTOM -->
+			  <ul class="collapsible" data-collapsible="accordion">
+			    <li>
+			      <div class="collapsible-header active">
+                    <h4>UBICACIÓN & NSE</h4>
+			      </div>
+			      <div class="collapsible-body">
+			         <select>
+				      	<option value="" disabled selected>Estado</option>
+				      	<option value="1">Aguascalientes</option>
+				      	<option value="2">Colíma</option>
+				    </select>
+				      <select>
+				      	<option value="" disabled selected>Ciudad</option>
+				      	<option value="1">Aguascalientes</option>
+				      	<option value="2">Colíma</option>
+				    </select>
+				    <select>
+				      	<option value="" disabled selected>Municipio</option>
+				      	<option value="1">Aguascalientes</option>
+				      	<option value="2">Colíma</option>
+				    </select>
+				    <select>	
+				      	<option value="" disabled selected>NSE</option>
+				      	<option value="1">Aguascalientes</option>
+				      	<option value="2">Colíma</option>
+				    </select>
+			       </div>
+			    </li>
+
+			    <li>
+			      <div class="collapsible-header">
+			      	<h4>ESTABLECIMIENTOS CERCANOS</h4>
+			      </div>
+			      <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+			    </li>
+			  </ul>
+	      </ul>
+	      
+	      <ul class="mapa">
+	 	    	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15002084.337996349!2d-111.55596176394198!3d23.365841313308945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84043a3b88685353%3A0xed64b4be6b099811!2zTcOpeGljbw!5e0!3m2!1ses-419!2smx!4v1460656400638"frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%"></iframe>
+
+	 	  <div class="panel-right row valign-wrapper">
+	 	  	
+			 	 <div class="valign">
+			 	  	<div class="col s9">
+				 	  	<h2>Leona Vicario No.401#</h2>
+				 	  	<h3>Metepec Estado de México</h3>
+			 	  	</div>
+			 	  	<div class="col s2 offset-s1">
+				 	  	<i class="material-icons">star_rate</i>
+				 	  	<p><a href="#">Remover</a></p>
+			 	  	</div>
+			 	  	<img src="assets/images/leonavicario.jpg" alt="">
+			 	  	<div class="col s6">
+			 	  		<div class="col s4"><i class="flaticon-people"></i></div>
+			 	  		<div class="col s8">
+			 	  			<span>350,000</span>
+			 	  			<span>población total</span>
+			 	  		</div>
+			 	  	</div>
+			 	  	<div class="col s6">
+			 	  		<div class="col s5"><i class="flaticon-business-1"></i>
+			 	  		</div>
+			 	  		<div class="col s7">
+			 	  			<span>C+</span><BR>
+			 	  			<span>población total</span>
+			 	  		</div>
+			 	  	</div>
+			 	  	<div class="col s6">
+			 	  		<div class="col s4"><i class="flaticon-business"></i></div>
+			 	  		<div class="col s8">
+			 	  			<span>27<em>años</em></span><br>
+			 	  			<span>promedio de edad</span>
+			 	  		</div>
+			 	  	</div>
+			 	  	<div class="col s6">
+			 	  		<div class="col s4"><i class="flaticon-medical"></i>
+			 	  		</div>
+			 	  		<div class="col s8">
+			 	  			<div class="col s6">
+			 	  			<span >47<em>%</em></span><BR>
+			 	  			<span>hombres</span>
+			 	  			</div>
+			 	  			<div class="col s6">
+			 	  			<span >53<em>%</em></span><BR>
+			 	  			<span>mujeres</span>
+			 	  			</div>
+			 	  		</div>
+			 	  	</div>
+					
+					<div class="col s12">
+			 	  	<a href="#"><i class="material-icons">remove_red_eye</i>&nbspDescargar en PDF</a>
+			 	  	</div>
+	 	  		</div>
+	 	  </div>
+
+	 	  <div class="panel-guardados">
+	 	  	<div class="close" ><a href=""><i class="material-icons">close</i></a>
+	 	  	</div>
+	 	  	
+	 	  	<ul>
+	 	  		<li><p>Pantallas Seleccionadas</p></li>
+				<li>
+					<p>Leona Vicario No.40 <br>
+					<span>Toluca Edo de México</span>
+					</p>
+					<a href="#">
+					<i class="material-icons">close</i>
+					</a>	
+				</li>
+				<li>
+					<p>Leona Vicario No.40 <br>
+					<span>Toluca Edo de México</span>
+					</p>
+					<a href="#">
+					<i class="material-icons">close</i>
+					</a>	
+				</li>
+				<li>
+					<p>Leona Vicario No.40 <br>
+					<span>Toluca Edo de México</span>
+					</p>
+					<a href="#">
+					<i class="material-icons">close</i>
+					</a>	
+				</li>
+				<li>
+					<p>Leona Vicario No.40 <br>
+					<span>Toluca Edo de México</span>
+					</p>
+					<a href="#">
+					<i class="material-icons">close</i>
+					</a>	
+				</li>
+				<li>
+					<p>Leona Vicario No.40 <br>
+					<span>Toluca Edo de México</span>
+					</p>
+					<a href="#">
+					<i class="material-icons">close</i>
+					</a>	
+				</li>
+
+
+	 	  	</ul>
+	 	  	<div>
+			 	  	<a href="#"><i class="material-icons">save</i>Guardar en campaña</a>
+			</div>
+	 	  </div>
+	     </ul>
+		</main>
+	</div>
 	
 <div class="section" id="section1"> 
    
@@ -119,12 +221,12 @@
 			<div>
 			  <ul>
 				<h3><i class="material-icons">format_list_bulleted</i>&nbsp Mis campañas creadas</h3>
-				 <li><a href="#"><i class="flaticon-folder"></i>Campaña Tecate GDL/MEX<a></li>
-				 <li><a href="#"><i class="flaticon-folder"></i>Campaña Gansito MTY<a></li>
-				 <li><a href="#"><i class="flaticon-folder"></i>Campaña Pepsi CDMX<a></li>
+				 <li><a href="#"><i class="flaticon-folder"></i>Campaña Tecate GDL/MEX</a></li>
+				 <li><a href="#"><i class="flaticon-folder"></i>Campaña Gansito MTY</a></li>
+				 <li><a href="#"><i class="flaticon-folder"></i>Campaña Pepsi CDMX</a></li>
 				 
 		      </ul>
-		       <a class="modal-trigger" href="#modal2"><i class="material-icons">add_box</i>Crear campaña nueva</a>
+		       <a class="modal-trigger" href="#modal2"><i class="material-icons">add</i>Crear campaña nueva</a>
 		     			
 			</div>
 
@@ -156,7 +258,14 @@
 		            <td>27 años</td>
 		            <td>47%</td>
 		            <td>53%</td>
-		            <td><i class="flaticon-icon-128"></i></td>
+		            <td>
+		            	<span class="tip"><i class="flaticon-icon-128"></i>
+			            	<span class="active">
+			            		<em>Opciones</em><hr>
+								<a href=""><i class="flaticon-arrows-1"></i>Mover a...</a><br>
+								<a href=""><i class="flaticon-delete"></i>Eliminar</a>
+							</span>
+						</span></td>
 		          </tr>
 		          <tr>
 		            <td><img src="assets/images/c2.png" alt=""></td>
@@ -167,18 +276,34 @@
 		            <td>21 años</td>
 		            <td>50%</td>
 		            <td>50%</td>
-		            <td><i class="flaticon-icon-128"></i></td>
+		            <td>
+		            	<span class="tip"><i class="flaticon-icon-128"></i>
+			            	<span class="active">
+			            		<em>Opciones</em><hr>
+								<a href=""><i class="flaticon-arrows-1"></i>Mover a...</a><br>
+								<a href=""><i class="flaticon-delete"></i>Eliminar</a>
+							</span>
+						</span>
+		            </td>
 		          </tr>
 		          <tr>
 		            <td><img src="assets/images/c3.png" alt=""></td>
 		            <td>Av. Vallarta #345 Guadalajara / Jalisco</td>
 		            <td>10m x 4m</td>
-		            <td>163,000/td>
+		            <td>163,000</td>
 		            <td>C+</td>
 		            <td>32 años</td>
 		            <td>55%</td>
 		            <td>45%</td>
-		            <td><i class="flaticon-icon-128"></i></td>
+		            <td>
+		            	<span class="tip"><i class="flaticon-icon-128"></i>
+			            	<span class="active">
+			            		<em>Opciones</em><hr>
+								<a href=""><i class="flaticon-arrows-1"></i>Mover a...</a><br>
+								<a href=""><i class="flaticon-delete"></i>Eliminar</a>
+							</span>
+						</span>
+		            </td>
 		          </tr>
 		          <tr>
 		            <td><img src="assets/images/c4.png" alt=""></td>
@@ -189,7 +314,15 @@
 		            <td>25 años</td>
 		            <td>46%</td>
 		            <td>45%</td>
-		            <td><i class="flaticon-icon-128"></i></td>
+		            <td>
+		            	<span class="tip"><i class="flaticon-icon-128"></i>
+			            	<span class="active">
+			            		<em>Opciones</em><hr>
+								<a href=""><i class="flaticon-arrows-1"></i>Mover a...</a><br>
+								<a href=""><i class="flaticon-delete"></i>Eliminar</a>
+							</span>
+						</span>
+		            </td>
 		          </tr>
 		          <tr>
 		            <td><img src="assets/images/c5.png" alt=""></td>
@@ -200,7 +333,14 @@
 		            <td>30 años</td>
 		            <td>58%</td>
 		            <td>42%</td>
-		            <td><i class="flaticon-icon-128"></i></td>
+		            <td><span class="tip"><i class="flaticon-icon-128"></i>
+			            	<span class="active">
+			            		<em>Opciones</em><hr>
+								<a href=""><i class="flaticon-arrows-1"></i>Mover a...</a><br>
+								<a href=""><i class="flaticon-delete"></i>Eliminar</a>
+							</span>
+						</span>
+					</td>
 		          </tr>
 		        </tbody>
 		      </table>
@@ -209,9 +349,9 @@
 		      </div>	
 
 	</main>
-	
-       
+	       
 </div>
+
 	
 <div class="section" id="section2">
 		<main class="contenido-contacto">
@@ -231,7 +371,7 @@
 								<p>Contáctanos y solicita una cotización para tu campaña en Medios Exteriores</p>
 							</div>
 							<div class="col s5">
-								<p><span>Llámanos:</span><br>
+								<p><span>Llámanos:</span></br>
 								(55) 3067-4103 y (55) 4606-1234</p>
 							</div>
 						</div>
@@ -244,7 +384,8 @@
 					<div class="col s4">
 						<h3>Ejecutivo de cuenta</h3>
 						<h4>Jorge Ramírez</h4>
-						<a href="mailto:jorge.ramirez@msmedia.com.mx">jorge.ramirez@msmedia.com.mx</a></span>
+						<a href="mailto:jorge.ramirez@msmedia.com.mx">jorge.ramirez@msmedia.com.mx
+						</a>
 						<p>
 						Tel: +52 (55) 3067-4103 y (55)4606-1234<br>
 						Moras #441, Col. Del Valle,<br>
@@ -255,7 +396,7 @@
 					<div class="col s4">
 						<h3>Mercadotecnia</h3>
 						<h4>Monica Olivares</h4>
-						<a href="mailto:monica.olivares@msmedia.com.mx">monica.olivares@msmedia.com.mx</a></span>
+						<a href="mailto:monica.olivares@msmedia.com.mx">monica.olivares@msmedia.com.mx</a>
 						<p>
 						Tel: +52 (55) 3067-4103 y (55)4606-1234<br>
 						Moras #441, Col. Del Valle,<br>
@@ -266,7 +407,7 @@
 					<div class="col s4">
 						<h3>Ventas</h3>
 						<h4>Luisa Rodríguez</h4>
-						<a href="mailto:luisa.rodriguez@msmedia.com.mx">luisa.rodriguez@msmedia.com.mx</a></span>
+						<a href="mailto:luisa.rodriguez@msmedia.com.mx">luisa.rodriguez@msmedia.com.mx</a>
 						<p>
 						Tel: +52 (55) 3067-4103 y (55)4606-1234<br>
 						Moras #441, Col. Del Valle,<br>
@@ -276,13 +417,9 @@
 					
 				</article>
 			</section>
-		</main>		
-	
-</div>
-	
-	
-
-
+		</main>	
+	</div>	
+<!-- ** FULLPAGE ENDS///-->
 </div>
 
 
@@ -322,11 +459,11 @@
             <label class="col s6">Nombre de campaña</label><input class="col s6" type="text" name="Nombre" ><br>
 			<label for="" class="col s6">Fecha de inicio</label><input class="col s6"  type="text" name="Inicio"><br>
 			<label for="" class="col s6">Fecha de finalización</label> <input type="text" class="col s6" name="Finalización"><br>
-			<a class="modal-trigger modal-close" href="#modal3"><i class="flaticon-arrows"></i>Ver campañas creadas</a>
+			<a class="modal-trigger modal-close" href="#modal3"><i class="material-icons">arrow_back</i>Ver campañas creadas</a>
 			</div>
 			<div class="submits">
 			<input type="submit" class="sub" value="Cancelar">
-			<input type="submit" class="sub2" value="Guardar">
+			<input type="submit" class="sub" value="Guardar">
 			</div>
 			</form>
 
@@ -342,29 +479,28 @@
             <h3>Selecciona una campaña</h3>
             <h4><i class="material-icons">format_list_bulleted</i>&nbsp Mis campañas creadas</h4>
             <form action="#">
+			<div>
 		    <p>
-		      <input type="checkbox" id="test5" />
-		      <label for="test5">Red</label>
+		      <span><i class="flaticon-folder"></i>Campaña Tecate GDL/MEX</span>
+		      <input type="checkbox" class="filled-in" id="filled-in-box" />
+		      <label for="filled-in-box"></label>
 		    </p>
-		    <p>
-		      <input type="checkbox" id="test6" checked="checked" />
-		      <label for="test6">Yellow</label>
+		     <p>
+		      <span><i class="flaticon-folder"></i>Campaña Tecate GDL/MEX</span>
+		      <input type="checkbox" class="filled-in" id="filled-in-box2" />
+		      <label for="filled-in-box2"></label>
 		    </p>
-		    <p>
-		      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-		      <label for="filled-in-box">Filled in</label>
+		     <p>
+		      <span><i class="flaticon-folder"></i>Campaña Tecate GDL/MEX</span>
+		      <input type="checkbox" class="filled-in" id="filled-in-box3"  />
+		      <label for="filled-in-box3"></label>
 		    </p>
-		    <p>
-		      <input type="checkbox" id="test7" checked="checked" disabled="disabled" />
-		      <label for="test7">Green</label>
-		    </p>
-		      <p>
-		        <input type="checkbox" id="test8" disabled="disabled" />
-		        <label for="test8">Brown</label>
-		    </p>
+		     <a class="modal-trigger modal-close" href="#modal2"><i class="material-icons">add</i>Crear campañas nuevas</a>
+		    </div>
+
 			<div class="submits">
 			<input type="submit" class="sub" value="Cancelar">
-			<input type="submit" class="sub2" value="Guardar">
+			<input type="submit" class="sub" value="Guardar">
 			</div>
 			</form>
 
@@ -393,3 +529,4 @@
 
 </body>
 </html>
+
